@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Be Social</title>
+</head>
+
+<body>
+<ul id="posts"></ul>
+
+</body>
+
+<script>
+    const ul=document.getElementById('posts')
+    let get_posts_url = 'http://127.0.0.1:5000';
+    
+    function createNode(element){
+        return document.createElement(element)
+    }
+    
+    function append(parent, el){
+        return parent.appendChild(el)
+    }
+    
+    // const fetchOptions = {
+    //     method: 'GET'
+    // }
+    
+    fetch(get_posts_url)
+            .then((resp) => resp.json())
+            .then(function (data){
+                let posts = data;
+
+                return posts.map(function (post){
+                    let li = createNode('li');
+                    let span = createNode('p');
+
+                    span.innerHTML = `${post.post_body}`;
+                    
+                    append(li, span);
+                    append(ul, li)
+                })
+            })
+            .catch(error => console.log('error', error))
+</script>
+
+</html>
