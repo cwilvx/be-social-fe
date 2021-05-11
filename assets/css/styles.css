@@ -4,3 +4,23 @@
   display: inline-block;
 }
 
+#like {
+  left: 0%;
+  position: relative;
+}
+
+#comment {
+  left: 25%;
+  position: relative;
+}
+
+#retweet {
+  left: 50%;
+  position: relative;
+}
+
+#share {
+  left: 75%;
+  position: relative;
+}
+

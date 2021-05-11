@@ -5,32 +5,44 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Be Social Frontend</title>
-    <meta name="theme-color" content="rgb(255,255,255)">
-    <meta property="og:type" content="website">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/spacelab/bootstrap.min.css">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md">
-        <div class="container-fluid"><a class="navbar-brand" href="#">BE SOCIAL</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand text-monospace text-center" href="/" style="width: 100%;">BE SOCIAL _</a>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav"></ul>
             </div>
         </div>
     </nav>
-    <div class="container-fluid text-primary d-inline-block" id="posts_container">
-        <div class="card" id="posts_card" style="width: 330px;">
-            <div class="card-body">
-                <!-- <h4 class="card-title"></h4> -->
-                <h6 class="text-muted card-subtitle mb-2">this is the original card</h6>
-                <p class="card-text" id="post_body">This is the original card</p>
+    <div class="container-fluid" >
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" id="posts_container" style="width: 100px;">
+                <template id="posts_card">
+                    <div class="card border rounded shadow" id="posts" style="width: 100%;">
+                        <div class="card-body text-left d-flex">
+                            <div style="margin: 0px 10px 0px 0px;">
+                                <span><img src="/assets/img/spongebob-squarepants-1592120738.jpg" style="width: 55px;border-radius: 74px;margin: 0px 0px 0px 0px;"></span>
+                            </div>
+                            <div style="width: 100%;">
+                                <h6 class="text-left"><strong>@geoffrey45_</strong></h6>
+                                <p id="post_body">It’s absolutely wild that being good at interviewing for the developer job and being good at the actual job are two completely separate skills.</p>
+                                <p><span id="like"><i class="fa fa-heart-o" style="height: -11px;"></i></span><span id="comment"><i class="la la-comment" style="height: -11px;"></i></span><span id="retweet"><i class="la la-retweet" style="height: -11px;"></i></span><span id="share"><i class="la la-share" style="height: -11px;"></i></span></p>
+                            </div>
+                            <p class="text-right"><span style="font-size: 12px;color: var(--gray);"><strong><em>10h</em></strong></span></p>
+                        </div>
+                    </div>
+                </template>
             </div>
+            <div class="col-md-4"></div>
         </div>
     </div>
-    <script src="./index.js"></script>
+    <script src="./assets/js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
 </body>
