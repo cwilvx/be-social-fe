@@ -1,11 +1,9 @@
 .card {
   width: 330px;
-  margin: 5px;
-  display: inline-block;
 }
 
 #like {
-  left: 0%;
+  left: 0;
   position: relative;
 }
 
@@ -22,5 +20,35 @@
 #share {
   left: 75%;
   position: relative;
+}
+
+#post-text {
+  width: 100%;
+}
+
+@media (max-width:300px) {
+  #posts {
+    max-width: 100%;
+    min-width: 100%;
+    /*padding: 0;*/
+  }
+}
+
+@media (min-width:768px) {
+  #posts_container {
+    min-width: 600px;
+  }
+}
+
+@media (min-width:992px) {
+  #posts_container {
+    min-width: 700px;
+  }
+}
+
+@media (min-width:1200px) {
+  #posts_container {
+    min-width: auto;
+  }
 }
 
