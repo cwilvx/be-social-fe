@@ -1,4 +1,4 @@
-# be-social-fe
-A JavaScript front-end for the be-social-be flask app
+# BS _ Frontend
+A JavaScript front-end for the [BE SOCIAL](https://github.com/geoffrey45/be-social-api) flask API
 
 [Here is the new design](https://be-social-js.bss.design)
