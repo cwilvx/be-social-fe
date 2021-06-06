@@ -48,7 +48,7 @@ fetch(get_posts_url)
 
         let this_card = template.content.cloneNode(true);
         this_card.getElementById('post_body').innerHTML = `${post_body}`;
-        this_card.getElementById('post_author').innerHTML = `${post_author}`;
+        // this_card.getElementById('post_author').innerHTML = `${post_author}`;
         append(posts_container, this_card)
     })
   })
