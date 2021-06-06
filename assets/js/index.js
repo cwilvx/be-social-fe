@@ -31,3 +31,4 @@ fetch(get_posts_url, fetchOptions)
 
     })
     .catch(error => console.log('error', error))
+

@@ -6,35 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Be Social Frontend</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Average+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/styles.compiled.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand fixed-top" style="background: #ffffff;">
-        <div class="container"><a class="navbar-brand text-monospace text-center" href="/" style="width: 100%;">BE SOCIAL _</a>
+    <nav class="navbar navbar-light navbar-expand fixed-top" style="background: #ffffff;border-bottom: 1px solid rgb(201,201,201);height: 67px;">
+        <div class="container"><a class="navbar-brand text-center d-flex justify-content-center" style="width: 100%;"><span class="d-flex" style="margin-left: 0px;margin-right: 25%;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-layout-sidebar-inset" style="width: 35px;height: 35px;">
+                        <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"></path>
+                        <path d="M3 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"></path>
+                    </svg></span><span class="text-center border rounded d-flex justify-content-center" style="font-family: 'Average Sans', sans-serif;padding: 0px 10px 0px 10px;border-radius: 5px;background: rgb(0,0,0);width: 50px;color: rgba(255,255,255,0.9);height: 35px;"><strong>BS _</strong></span><span style="width: 35px;height: 35px;border-radius: 50px;background: url(&quot;assets/img/spongebob-squarepants-1592120738.jpg&quot;);margin-left: 25%;">&nbsp; &nbsp; &nbsp; &nbsp;</span></a>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav"></ul>
             </div>
         </div>
     </nav>
-    <div class="container-fluid" style="margin: 60px 0px 0px 0px;">
-        <div class="row justify-content-center">
+    <div class="container-fluid" style="margin: 75px 0px 0px 0px;padding: 0;">
+        <div class="row" style="margin: 0;">
             <div class="col-md-4" style="border-style: none;"></div>
-            <div class="col-auto col-md-4" id="posts_container"><template id="posts_card">
-    <div class="card border rounded shadow" id="posts" style="width: 100%;min-width: 100%;max-width: 100%; margin: 4px !important;">
-        <div class="card-body text-left d-flex">
-            <div style="margin: 0px 10px 0px 0px;"><span><img src="assets/img/spongebob-squarepants-1592120738.jpg" style="width: 55px;border-radius: 74px;margin: 0px 0px 0px 0px;" /></span></div>
-            <div id="post-text">
-                <h6 class="text-left"><a href="#"><strong>@geoffrey45_</strong></a></h6>
-                <p id="post_body">placeholder</p>
-                <p style="width: inherit;"><span id="like"><i class="fa fa-heart-o" style="height: -11px;"></i></span><span id="comment"><i class="la la-comment" style="height: -11px;"></i></span><span id="retweet"><i class="la la-retweet" style="height: -11px;"></i></span><span id="share"><i class="la la-share" style="height: -11px;"></i></span></p>
+            <div class="col" id="posts_container" style="color: rgb(0,0,0);padding: 0px 5px;">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center" style="width: 100%;padding: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-plus-circle" style="width: 45px;height: 45px;color: ef476f;">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
+                        </svg>
+                        <div style="margin-left: 1em;height: 40px;">
+                            <h6 style="color: #118ab2;margin-bottom: 4px;"><strong>What's poppin'?</strong></h6>
+                            <p style="font-size: 12px;">Share a photo or write something.</p>
+                        </div>
+                    </div>
+                </div>
+                <template id="posts_card">
+                    <div class="card" style="margin-top: 8px;">
+                        <div class="card-body" style="width: 100%;padding: 10px;">
+                            <div class="d-flex justify-content-start align-items-center" style="margin-bottom: 10px;"><img src="assets/img/2019lemonade-022-web%20(1).jpg" style="width: 39px;height: 39px;border-radius: 70px;margin-right: 8px;">
+                                <div style="height: 35px;">
+                                    <h6 style="color: rgb(0,0,0);font-size: 13px;margin-bottom: 3px;"><strong>Juice Wrldd </strong><span style="color: rgb(143,143,143);"><em>@999</em></span></h6>
+                                    <p style="font-size: 10px;color: rgb(160,160,160);"><strong><em>01 December 2019</em></strong></p>
+                                </div>
+                            </div>
+                            <p id="post_body" style="font-size: 13px;color: EF476F;">This life is yours do what tf you want do great things and change the world don’t let no one tell you SHIT.. and you’ll be bigger than “juice wrld” will ever be, and he’s going down as a legend - Jarad</p>
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center" style="margin-right: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-heart-fill" style="color: #ef476f;width: 18px;height: 18px;margin-right: 5px;">
+                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"></path>
+                                    </svg><span style="font-size: 10px;">999k</span></div>
+                                <div class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-bookmark-plus" style="color: #073b4c;width: 18px;height: 18px;margin-right: 5px;">
+                                        <path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"></path>
+                                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"></path>
+                                    </svg><span style="font-size: 10px;">734k</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+    
             </div>
-            <p class="text-right"><span style="font-size: 12px;color: var(--gray);"><strong><em>10h</em></strong></span></p>
-        </div>
-    </div>
-</template></div>
             <div class="col-md-4" style="border-style: none;border-color: var(--blue);"></div>
         </div>
     </div>
