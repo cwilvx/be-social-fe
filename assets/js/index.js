@@ -1,5 +1,5 @@
 const ul=document.getElementById('posts')
-let base_url = "http://127.0.0.1:5000/"
+let base_url = "https://be-social-be.herokuapp.com"
 let get_posts_url = `${base_url}`;
 let get_post_author_url = `${base_url}user/`;
 
